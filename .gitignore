@@ -1,0 +1,13 @@
+cpp/leetcode-cpp/x64
+cpp/leetcode-cpp/*.sln
+cpp/leetcode-cpp/*.vcxproj
+cpp/leetcode-cpp/*.filters
+cpp/leetcode-cpp/*.user
+
+cpp/leetcode-cpp2/.idea
+cpp/leetcode-cpp2/cmake-build-debug
+
+java/.gradle
+java/.idea
+java/target
+java/*.iml
