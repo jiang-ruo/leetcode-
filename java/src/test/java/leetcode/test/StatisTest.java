@@ -80,7 +80,7 @@ public class StatisTest implements TestInfo {
 		long[] tm = runMethod(count, obj, method, params);
 
 		this.ti.print(params, rs);
-		Assert.assertTrue(this.ti.verify(rs));
+		Assert.assertTrue(this.ti.verify(params, rs));
 //		System.out.printf("time: %dns\n", tm[0] - this.standardTime);
 //		System.out.printf("memory: %dB\n", tm[1] - this.standardMemory);
 		printTime(tm[0] - this.standardTime);
@@ -197,7 +197,7 @@ public class StatisTest implements TestInfo {
 			t2 = System.nanoTime();
 			m2 = this.r.freeMemory();
 			ti.print(params, rs);
-			Assert.assertTrue(ti.verify(rs));
+			Assert.assertTrue(ti.verify(params, rs));
 			time += (t2 - t1);
 			memory += (m1 - m2);
 		}
@@ -207,7 +207,7 @@ public class StatisTest implements TestInfo {
 	}
 
 	@Override
-	public boolean verify(Object rs) {
+	public boolean verify(Object[] params, Object rs) {
 		return true;
 	}
 

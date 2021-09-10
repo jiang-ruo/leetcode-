@@ -21,7 +21,7 @@ public class _4FindMedianSortedArraysTest implements TestInfo<Double> {
 	private Random r = new Random();
 
 	@Override
-	public boolean verify(Double rs) {
+	public boolean verify(Object[] params, Double rs) {
 		return true;
 	}
 

@@ -8,14 +8,13 @@ package leetcode.test;
 
 public interface TestInfo<T> {
 
-	int second = 1000;
-
 	/**
 	 * 对返回的结果进行校验，结果是否正确
+	 * @param params
 	 * @param rs
 	 * @return
 	 */
-	boolean verify(T rs);
+	boolean verify(Object[] params, T rs);
 
 	/**
 	 * 执行方法测试时输入的参数

@@ -1,9 +1,9 @@
 cpp/leetcode-cpp/.vs
-cpp/leetcode-cpp/x64
 cpp/leetcode-cpp/*.sln
 cpp/leetcode-cpp/*.vcxproj
 cpp/leetcode-cpp/*.filters
 cpp/leetcode-cpp/*.user
+cpp/leetcode-cpp/Debug
 
 cpp/leetcode-cpp2/.idea
 cpp/leetcode-cpp2/cmake-build-debug

@@ -111,7 +111,7 @@ public class _2AddTwoNumbersTest implements TestInfo<ListNode> {
 	}
 
 	@Override
-	public boolean verify(ListNode rs) {
+	public boolean verify(Object[] params, ListNode rs) {
 		return true;
 	}
 

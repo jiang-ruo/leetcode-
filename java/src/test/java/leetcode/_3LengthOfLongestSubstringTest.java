@@ -21,7 +21,7 @@ public class _3LengthOfLongestSubstringTest implements TestInfo<Integer> {
 	private Random r = new Random();
 
 	@Override
-	public boolean verify(Integer rs) {
+	public boolean verify(Object[] params, Integer rs) {
 		return true;
 	}
 
