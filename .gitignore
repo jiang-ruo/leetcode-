@@ -7,6 +7,7 @@ cpp/leetcode-cpp/Debug
 
 cpp/leetcode-cpp2/.idea
 cpp/leetcode-cpp2/cmake-build-debug
+cpp/leetcode-cpp2/out
 
 java/.gradle
 java/.idea
