@@ -6,8 +6,16 @@ import java.util.Arrays;
  * @author XiaoLOrange
  * @time 2021.07.22
  * @title
+ * @url https://leetcode-cn.com/problems/median-of-two-sorted-arrays/
  * TODO 时间复杂度O(log(m+n))
  * TODO 寻找更精简的写法
+ *
+ * 给定两个大小分别为 m 和 n 的正序（从小到大）数组 nums1 和 nums2。请你找出并返回这两个正序数组的 中位数 。
+ *
+ * 例：
+ * 输入：nums1 = [1,2], nums2 = [3,4]
+ * 输出：2.50000
+ * 解释：合并数组 = [1,2,3,4] ，中位数 (2 + 3) / 2 = 2.5
  */
 
 public class Solution {

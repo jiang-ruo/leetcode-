@@ -28,7 +28,8 @@ public class _8MyAtoiTest implements TestInfo<Integer> {
 			"  0000000000012345678",
 			"   54",
 			"2147483648",
-			""
+			"",
+			"-91283472332"
 	};
 
 	private int pointer = 0;
