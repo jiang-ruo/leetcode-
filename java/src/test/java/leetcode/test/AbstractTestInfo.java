@@ -13,6 +13,8 @@ import java.util.Iterator;
 
 public abstract class AbstractTestInfo<T> implements TestInfo<T>{
 
+	protected StatisTest st = new StatisTest(this);
+	//
 	private Iterable<Object[]> ib;
 	private Iterator<Object[]> i;
 	private int size;
@@ -26,6 +28,21 @@ public abstract class AbstractTestInfo<T> implements TestInfo<T>{
 	public Object[] buildParams() {
 		if(!i.hasNext()) i = ib.iterator();
 		return i.next();
+	}
+
+	@Override
+	public void print(Object[] params, T rs) {
+		System.out.printf("result: %s", RsForPrint(rs));
+		System.out.println();
+	}
+
+	/**
+	 * 该方法主要用于重写，设置打印rs的格式
+	 * @param rs
+	 * @return
+	 */
+	public String RsForPrint(T rs){
+		return rs == null ? null : rs.toString();
 	}
 
 	public void setIb(Iterable<Object[]> ib) {
@@ -50,7 +67,7 @@ public abstract class AbstractTestInfo<T> implements TestInfo<T>{
 	 * @param m
 	 */
 	public void doMethod(Object obj, Method m){
-		StatisTest st = new StatisTest(this);
+//		StatisTest st = new StatisTest(this);
 		st.doMethod(size, obj, m);
 	}
 

@@ -16,7 +16,7 @@ public class Params<T> {
 	private Object[] ps;
 	private T rs;
 
-	public Params(Object[] ps){
+	public Params(Object... ps){
 		this.ps = ps;
 	}
 

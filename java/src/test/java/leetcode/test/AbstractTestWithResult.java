@@ -17,7 +17,7 @@ public abstract class AbstractTestWithResult<T> implements TestInfo<T>{
 	private Iterable<Params<T>> ib;
 	private Iterator<Params<T>> i;
 	private int size;
-	private Params<T> current;
+	protected Params<T> current;
 
 	@Override
 	public Object[] buildParams() {
@@ -38,13 +38,22 @@ public abstract class AbstractTestWithResult<T> implements TestInfo<T>{
 	 * @param standard 预先输入的正确结果/标准答案
 	 */
 	public void print(Object[] params, T rs, T standard){
-		System.out.printf("result: %s", parseRs(rs));
-		if(standard != null) System.out.printf(", standard: %s", parseRs(standard));
+		String s = parseRs(rs);
+		System.out.printf("result: %s", s);
+		if(standard != null) {
+			System.out.printf(s.length() > 60 ? "\n" : ", ");
+			System.out.printf("standard: %s", parseRs(standard));
+		}
 		System.out.println();
 	}
 
+	/**
+	 * 该方法主要用于重写，设置打印rs的格式
+	 * @param rs
+	 * @return
+	 */
 	public String parseRs(T rs){
-		return rs.toString();
+		return rs == null ? null : rs.toString();
 	}
 
 	@Override

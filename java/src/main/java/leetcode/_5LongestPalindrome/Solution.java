@@ -4,14 +4,7 @@ package leetcode._5LongestPalindrome;
  * @author XiaoLOrange
  * @time 2021.07.26
  * @title 回文子串 - 正序反序相同的字符串
- * @url https://leetcode-cn.com/problems/longest-palindromic-substring/
  *
- * 给你一个字符串 s，找到 s 中最长的回文子串。
- *
- * 例：
- * 输入：s = "babad"
- * 输出："bab"
- * 解释："aba" 同样是符合题意的答案。
  */
 
 public class Solution {
